@@ -1,0 +1,17 @@
+name: bandit
+version: "1.0.0"
+summary: Security Scanner for Python.
+description:
+    Static Code Analysis for Python code.
+base: core18
+confinement: strict
+parts:
+  bandit:
+    plugin: python
+    source-tag: "v1.0.0"
+    source: https://github.com/PyCQA/bandit.git
+apps:
+  bandit:
+    command: bandit
+    plugs:
+    - network
