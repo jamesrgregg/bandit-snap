@@ -12,6 +12,6 @@ parts:
     source: https://github.com/PyCQA/bandit.git
 apps:
   pycqa-bandit:
-    command: pycqa-bandit
+    command: bandit
     plugs:
     - network
