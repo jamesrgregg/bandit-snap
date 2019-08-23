@@ -1,4 +1,4 @@
-name: bandit
+name: pycqa-bandit
 version: "1.0.1"
 summary: Security Scanner for Python.
 description:
@@ -6,12 +6,12 @@ description:
 base: core18
 confinement: classic
 parts:
-  bandit:
+  pycqa-bandit:
     plugin: python
     source-tag: "1.6.2"
     source: https://github.com/PyCQA/bandit.git
 apps:
-  bandit:
-    command: bandit
+  pycqa-bandit:
+    command: pycqa-bandit
     plugs:
     - network
